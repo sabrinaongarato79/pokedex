@@ -1,0 +1,391 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-login h1 {
+    color: #FE1936;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.container-login h2 {
+    color: #302F2F;
+    margin-bottom: 50px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 4px 10px -7px;
+    width: 600px;
+}
+
+.input-group input {
+    padding: 15px;
+    width: 60%;
+    font-size: 1.5rem;
+    border: none;
+    height: 30px;
+    outline: none;
+}
+
+.input-group .btn {
+    font-size: 1.4rem;
+    padding: 16px;
+    width: 40%;
+    height: 64px;
+    background: #D93F3F;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.input-group .btn:hover {
+    background: #9e3232;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-red {
+    background: #DD1A1A;
+    height: 90px;
+    display: flex;
+}
+
+footer .footer-circle {
+    max-height: 100px;
+    margin: auto;
+    margin-bottom: -40px;
+}
+
+footer .footer-black {
+    background: #0C0C0C;
+    height: 40px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.header-red {
+    height: 90px;
+    background: #DD1A1A;
+    display: flex;
+    align-items: center;
+}
+
+.header-black {
+    background: #0C0C0C;
+    height: 40px;
+}
+
+.header-circle {
+    height: 100px;
+    margin-top: -30px;
+    position: absolute;
+    right: 20%;
+}
+
+.header-logo {
+    height: 70px;
+    position: relative;
+    left: 20%;
+    margin-bottom: -50px;
+}
+
+.container {
+    padding: 0px 20% 50px 20%;
+}
+
+.text-red {
+    color: #FE1936;
+}
+
+.title-pokedex {
+    margin-bottom: 20px;
+}
+
+.content-fields {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-select {
+    padding: 15px;
+    width: 300px;
+    font-size: 1.5rem;
+    border: 1px solid #e9e9e9;
+    height: 64px;
+    outline: none;
+    box-shadow: 0px 4px 10px -7px;
+}
+
+
+.pokemon-card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.card-img {
+    background: #B9B9BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pokemon-card {
+    border: 8px solid #B9B9BA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pokemon-card img {
+    max-height: 150px;
+    margin-bottom: -40px;
+}
+
+.card-body-header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #E5E5E5;
+    text-transform: capitalize;
+}
+
+.card-body-header h4 {
+    color: #4F4F4F;
+    font-weight: 600;
+}
+
+.card-body-header h5 {
+    color: #9F9F9F;
+}
+
+.card-body-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px
+}
+
+.card-body-stats .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-body-stats .stats span {
+    font-size: .7rem;
+    color: #9F9F9F;
+    margin-bottom: 8px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 30px;
+}
+
+.pagination .item {
+    padding: 20px;
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination .item.active {
+    background: #DD1A1A;
+    color: white;
+    border-radius: 5px;
+}
+
+.container-card {
+    border: 5px solid white;
+    box-shadow: 0px 4px 10px -5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.container-card-body {
+    padding: 0px 60px;
+}
+
+.pokemon-detail {
+    margin-top: 150px;
+}
+
+.pokemon-detail-img {
+    background: #8bc34a;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-detail-img img {
+    height: 300px;
+    margin-top: -130px;
+}
+
+.pokemon-number {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pokemon-number h1 {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: #416460;
+}
+
+.pokemon-detail .title {
+    margin: 40px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+    text-transform: capitalize;
+}
+
+.pokemon-detail .title span {
+    margin-bottom: -20px;
+    background: white;
+    padding: 0px 25px;
+    color: #416460;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pokemon-detail .title-legend {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0px;
+}
+
+.pokemon-detail .title-legend .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.pokemon-detail .title-legend .item strong {
+    font-size: 1.5rem;
+}
+
+.abilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.abilities .item {
+    text-align: center;
+}
+
+.abilities .abilities-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.abilities .info {
+    margin-top: 30px
+}
+
+.abilities .info span {
+    border: 2px solid gray;
+    margin: 0px 10px;
+    padding: 7px 40px;
+    border-radius: 5px;
+}
+
+
+.title-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #F6F5F5;
+    margin-bottom: 70px;
+}
+
+.title-stats span {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -50px;
+    background: white;
+    padding: 0px 20px;
+}
+
+.title-stats img {
+    margin-bottom: -50px;
+    background: white;
+    padding: 0px 10px;
+}
+
+
+.progress-bar {
+    margin: 20px 0px;
+}
+
+.progress-bar .progress-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar .progress-title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.progress-bar .progress-bar-item {
+    background: #F6F6F6;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.progress-bar .progress-bar-item .bar {
+    background: #FCD676;
+    width: 45%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.content-moves .item {
+    margin: 5px;
+    background: #E5E5E5;
+    color: #302F2F;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50px;
+}
